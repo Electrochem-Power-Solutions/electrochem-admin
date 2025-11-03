@@ -58,6 +58,12 @@ export default function Home() {
           >
             Products
           </Link>
+          <Link
+            href="/order"
+            className="text-sm font-medium hover:underline underline-offset-4"
+          >
+            Orders
+          </Link>
 
           <Link
             href="signup"

@@ -16,8 +16,10 @@ export interface IProduct extends Document {
   image: string[];
   price: number;
   minQuantity: number;
-  stock:number;
+  stock: number;
   prodSpecs?: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const subProductSchema = new Schema<ISubProduct>({
@@ -43,8 +45,10 @@ const productSchema = new Schema<IProduct>({
     },
   },
   price: { type: Number, required: true },
-  stock:{type:Number,required:true,default:0},
   minQuantity: { type: Number, required: true },
+  stock: { type: Number, required: true, default: 0 },
+}, {
+  timestamps: true, 
 });
 
 export const Product = models.Product || mongoose.model<IProduct>('Product', productSchema);

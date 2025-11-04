@@ -65,6 +65,12 @@ export default function Home() {
           >
             Sign Up
           </Link>
+          <Link
+            href="order"
+            className="text-sm font-medium hover:underline underline-offset-4"
+          >
+            Orders
+          </Link>
           {token ? (
             <button
               onClick={logout}

@@ -39,7 +39,7 @@ const orderSchema = new Schema<IOrder>({
   totalAmount: { type: Number, required: true },
   status: { 
     type: String, 
-    enum: ['placed','processing', 'shipped', 'delivered', 'cancelled'], 
+    enum: ['pending' ,'placed','processing', 'shipped', 'delivered', 'cancelled'], 
     default: 'pending' 
   },
   shippingAddress: { type: addressSchema, required: true },

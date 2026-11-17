@@ -12,10 +12,10 @@ export default function BankDetailsPanel({
   return (
     <div className={wrap}>
       <p className="font-bold mb-1">Our Bank Details</p>
-      <p className="font-normal m-0">Name of the Bank: HDFC BANK LTD.</p>
-      <p className="font-normal m-0">Branch: GOVINDPURAM, GHAZIABAD</p>
-      <p className="font-normal m-0">Account No.: 50200050613575</p>
-      <p className="font-normal m-0">IFSC: HDFC0004733</p>
+      <p className="font-normal m-0">Name of the Bank: STATE BANK OF INDIA.</p>
+      <p className="font-normal m-0">Branch: SME BRANCH,NOIDA</p>
+      <p className="font-normal m-0">Account No.: 45608300159</p>
+      <p className="font-normal m-0">IFSC: SBIN0004077</p>
     </div>
   );
 }

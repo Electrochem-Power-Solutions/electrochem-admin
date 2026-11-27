@@ -149,8 +149,11 @@ export default function Navbar() {
           <Link href="/signup" className={`${linkClass} hidden sm:block`}>
             Sign Up
           </Link>
+          <Link href="/rag-chatbot" className={`${linkClass} hidden sm:block`}>
+            Chat Bot
+          </Link>
 
-          <div className="h-6 w-[1px] bg-white/20 mx-1 shrink-0 hidden md:block" />
+          <div className="h-6 w-px bg-white/20 mx-1 shrink-0 hidden md:block" />
 
           <div className="shrink-0">
             {token ? (
